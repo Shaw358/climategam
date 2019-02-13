@@ -124,7 +124,7 @@ public class Main {
                 }
 
                 //question 7
-                if (questionInt == 6) {
+                if (questionInt == 7) {
                     for (int i8 = 1; i8 <= 20; ++i8) {
                         System.out.println();
                     }
@@ -136,7 +136,7 @@ public class Main {
                 }
 
                 //question 8
-                if (questionInt == 6) {
+                if (questionInt == 8) {
                     for (int i9 = 1; i9 <= 20; ++i9) {
                         System.out.println();
                     }
@@ -148,7 +148,7 @@ public class Main {
                 }
 
                 //question 9
-                if (questionInt == 6) {
+                if (questionInt == 9) {
                     for (int i10 = 1; i10 <= 20; ++i10) {
                         System.out.println();
                     }
@@ -160,7 +160,7 @@ public class Main {
                 }
 
                 //question 10
-                if (questionInt == 6) {
+                if (questionInt == 10) {
                     for (int i11 = 1; i11 <= 20; ++i11) {
                         System.out.println();
                     }
@@ -172,8 +172,8 @@ public class Main {
                 }
 
                 //question 11
-                if (questionInt == 6) {
-                    for (int i11 = 1; i11 <= 20; ++i11) {
+                if (questionInt == 11) {
+                    for (int i12 = 1; i12 <= 20; ++i12) {
                         System.out.println();
                     }
 
@@ -184,8 +184,8 @@ public class Main {
                 }
 
                 //question 12
-                if (questionInt == 6) {
-                    for (int i11 = 1; i11 <= 20; ++i11) {
+                if (questionInt == 12) {
+                    for (int i13 = 1; i13 <= 20; ++i13) {
                         System.out.println();
                     }
 
