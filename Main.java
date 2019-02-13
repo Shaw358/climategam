@@ -41,9 +41,12 @@ public class Main {
         if (hit1.equals("n"))
         {
 
+=
+
         boolean runmachine = true;
         while (runmachine)
         {
+            boolean game_over = false;
 
             Random question = new Random(); // current 20 questions max (might add more in teh future)
             int questionInt = question.nextInt(20);
@@ -201,7 +204,7 @@ public class Main {
                     humanity = 100;
                     System.out.println("Over population caused a shortage in food, energy, water. Anarchy broke out and a civl war ensued. Your country has fallen.");
 
-                    boolean game_over = true;
+                    game_over = true;
                 }
                 if(humanity <= 0)
                 {
@@ -209,7 +212,7 @@ public class Main {
                     humanity = 0;
                     System.out.println("Everyone died and martial is declared soon after, it's a wasteland. Your country has fallen.");
 
-                    boolean game_over = true;
+                    game_over = true;
                 }
                 if(plantLife <= 0)
                 {
@@ -217,7 +220,7 @@ public class Main {
                     plantLife = 0;
                     System.out.println("The plant life has died out... and we're not the only one. Crops have died on a massive scale and there is no more food. You country has fallen.");
 
-                    boolean game_over = true;
+                    game_over = true;
                 }
                 if(animalLife <= 0)
                 {
@@ -225,7 +228,7 @@ public class Main {
                     animalLife = 0;
                     System.out.println("The animal life has died out. Plants can't reproduce, the soil is destroyed. Your country has fallen.");
 
-                    boolean game_over = true;
+                    game_over = true;
                 }
                 if(ozoneLayer <= 0)
                 {
@@ -233,7 +236,7 @@ public class Main {
                     ozoneLayer = 0;
                     System.out.println("We have destroyed the ozone layer, we are being bombarded by radiation from the sun. Your country has fallen.");
 
-                    boolean game_over = true;
+                    game_over = true;
                 }
                 if(money <= 0)
                 {
@@ -241,7 +244,7 @@ public class Main {
                     money = 0;
                     System.out.println("We're out of money, we can no longer support the state. Your country has fallen.");
 
-                    boolean game_over = true;
+                    game_over = true;
                 }
             }
 
