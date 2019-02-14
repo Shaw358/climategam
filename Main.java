@@ -14,7 +14,7 @@ public class Main {
         System.out.println("\\____/ \\___/\\_|   \\_| \\_\\____/\\_|  |_/\\____/   \\___/\\_____/\\_/  \\___/\\_|  |_/\\_| |_/\\_/ \\____/ ");
         System.out.println("                                                                                               ");
         System.out.println("                                       Press A to start");
-        System.out.println("                                      Hey, you, God here");
+        System.out.println("                                     Hey, you, God here...");
         System.out.println("                     Humanity, Ozone layer, Plant life, Animal life and Money");
         System.out.println("                              Keep them in balance while i'm out kay?");
 
@@ -49,8 +49,8 @@ public class Main {
         {
             boolean game_over = false;
 
-            Random question = new Random(); // current 20 questions max (might add more in teh future)
-            int questionInt = question.nextInt(12);
+            Random question = new Random(); // current 16 questions max (might add more in teh future LONG LIVE THE FATHERLAND)
+            int questionInt = question.nextInt(16);
             {
 
 
@@ -631,6 +631,7 @@ public class Main {
 
                 }
 
+                //question 13
                 if (questionInt == 13) {
 
                     System.out.println("Both the Animal comission and CO2 comission demand to increase their yearly budgets. Do we give priority to the CO2 commision or...?");
@@ -705,6 +706,104 @@ public class Main {
                     }
 
                 }
+
+                //question 15
+                if (questionInt == 15) {
+
+                    System.out.println("We should introduce laws for decreased carbon emission by planes and ships?");
+                    System.out.println("Y: -money, +ozone layer, plant life, animal life, -humanity");
+                    System.out.println("N: +money, -ozone layer, plant life, -animal life, +humanity");
+
+                String Q15 = scan.nextLine();
+                if (Q15.equalsIgnoreCase("y")) {
+                    money = money - 5;
+                    ozoneLayer = ozoneLayer + 5;
+                    humanity = humanity - 5;
+
+                    System.out.println("Money: " + money + " ozone layer: " + ozoneLayer + " plant life: " + plantLife + " animal life: " + animalLife + " humanity: " + humanity);
+
+                    try {
+                        Thread.sleep(5000);
+                    } catch (InterruptedException ex) {
+                        Thread.currentThread().interrupt();
+                    }
+
+                    for (int i1 = 1; i1 <= 20; ++i1)
+                    {
+                        System.out.println();
+                    }
+                }
+
+                if (Q15.equalsIgnoreCase("n")) {
+                    money = money + 5;
+                    ozoneLayer = ozoneLayer - 5;
+                    humanity = humanity + 5;
+
+                    System.out.println("Money: " + money + " ozone layer: " + ozoneLayer + " plant life: " + plantLife + " animal life: " + animalLife + " humanity: " + humanity);
+
+                    try {
+                        Thread.sleep(5000);
+                    } catch (InterruptedException ex) {
+                        Thread.currentThread().interrupt();
+                    }
+
+                    for (int i1 = 1; i1 <= 20; ++i1)
+                    {
+                        System.out.println();
+                    }
+                }
+
+            }
+                //question 16
+                if (questionInt == 16) {
+
+                    System.out.println("A tornade swept our shores yesterday, the upper class wishes to limit the economic damage. Do you agree?");
+                    System.out.println("Y: +money, ozone layer, -plant life, -animal life, -humanity");
+                    System.out.println("N: -money, ozone layer, +plant life, +animal life, +humanity");
+
+                    String Q16 = scan.nextLine();
+                    if (Q16.equalsIgnoreCase("y")) {
+                        money = money + 10;
+                        plantLife = plantLife - 5;
+                        humanity = humanity - 5;
+                        animalLife = animalLife - 5;
+
+                        System.out.println("Money: " + money + " ozone layer: " + ozoneLayer + " plant life: " + plantLife + " animal life: " + animalLife + " humanity: " + humanity);
+
+                        try {
+                            Thread.sleep(5000);
+                        } catch (InterruptedException ex) {
+                            Thread.currentThread().interrupt();
+                        }
+
+                        for (int i1 = 1; i1 <= 20; ++i1)
+                        {
+                            System.out.println();
+                        }
+                    }
+
+                    if (Q16.equalsIgnoreCase("n")) {
+                        money = money - 10;
+                        plantLife = plantLife + 5;
+                        animalLife = animalLife + 5;
+                        humanity = humanity + 5;
+
+                        System.out.println("Money: " + money + " ozone layer: " + ozoneLayer + " plant life: " + plantLife + " animal life: " + animalLife + " humanity: " + humanity);
+
+                        try {
+                            Thread.sleep(5000);
+                        } catch (InterruptedException ex) {
+                            Thread.currentThread().interrupt();
+                        }
+
+                        for (int i1 = 1; i1 <= 20; ++i1)
+                        {
+                            System.out.println();
+                        }
+                    }
+
+                }
+
 
                 if(humanity >= 100)
                 {
